@@ -92,3 +92,18 @@ a:hover {
     background-color: #e0e0e0;
     text-decoration: none;
 }
+
+/* Logo */
+.header-logo {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto 30px auto;
+}
+
+.footer-logo {
+    display: block;
+    max-width: 150px;
+    width: 100%;
+    margin: 20px auto 10px auto;
+}
