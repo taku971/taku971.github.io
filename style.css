@@ -96,14 +96,14 @@ a:hover {
 /* Logo */
 .header-logo {
     display: block;
-    max-width: 300px;
+    max-width: 100px;
     width: 100%;
     margin: 0 auto 30px auto;
 }
 
 .footer-logo {
     display: block;
-    max-width: 150px;
+    max-width: 50px;
     width: 100%;
     margin: 20px auto 10px auto;
 }
