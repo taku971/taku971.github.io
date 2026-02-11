@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ペアモニ</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .app-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .app-item {
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            transition: box-shadow 0.3s;
+        }
+        .app-item:hover {
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .app-item h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .app-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">ペアモニ</h1>
+        <p style="text-align: center;">開発したアプリの一覧です。</p>
+
+        <div id="apps">
+            <ul class="app-list">
+                <li class="app-item">
+                    <a href="apps/pairkan.html" class="app-link">
+                        <h3>ペアカン</h3>
+                        <p>ペア専用の割り勘・精算アプリ</p>
+                    </a>
+                </li>
+                <li class="app-item">
+                    <a href="apps/todays-mission.html" class="app-link">
+                        <h3>Today's Mission!!</h3>
+                        <p>毎日のミッションでタスクを続けるアプリ</p>
+                    </a>
+                </li>
+                <li class="app-item">
+                    <a href="apps/zankoku.html" class="app-link">
+                        <h3>残りの刻</h3>
+                        <p>節目までの残り時間を可視化するアプリ</p>
+                    </a>
+                </li>
+                <li class="app-item">
+                    <a href="apps/tenmaru.html" class="app-link">
+                        <h3>点丸</h3>
+                        <p>麻雀の点数計算・成績管理アプリ</p>
+                    </a>
+                </li>
+                <li class="app-item">
+                    <a href="apps/namiyomi.html" class="app-link">
+                        <h3>波読み（NamiYomi）</h3>
+                        <p>ボートレースの予想情報を提供するアプリ</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-nav">
+            <a href="index.html" class="nav-button">ホーム</a>
+            <a href="contact.html" class="nav-button">お問い合わせ</a>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 pairmoni</p>
+        </div>
+    </div>
+</body>
+</html>
