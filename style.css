@@ -127,9 +127,20 @@ header {
     margin-bottom: var(--spacing-xxl);
 }
 
+.header-logo-link {
+    display: inline-block;
+    transition: opacity 0.2s ease;
+}
+
+.header-logo-link:hover {
+    opacity: 0.8;
+}
+
 .header-logo {
     display: block;
-    max-width: 140px;
+    width: 100%;
+    max-width: 180px;
+    height: auto;
     margin: 0 auto var(--spacing-lg) auto;
 }
 
@@ -146,7 +157,7 @@ header {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: var(--spacing-lg);
     list-style: none !important;
-    padding: 0;
+    padding: 0 !important;
     margin-bottom: var(--spacing-xxl);
 }
 
@@ -250,17 +261,6 @@ header {
     padding-bottom: var(--spacing-lg);
 }
 
-.footer-logo {
-    display: block;
-    max-width: 60px;
-    margin: 0 auto var(--spacing-md) auto;
-    opacity: 0.6;
-    transition: opacity 0.2s;
-}
-
-.footer-logo:hover {
-    opacity: 1;
-}
 
 /* 9. Components - CTA Buttons */
 .cta-row {
@@ -349,5 +349,9 @@ header {
     
     .cta-button {
         width: 100%;
+    }
+
+    .header-logo {
+        max-width: 120px;
     }
 }
