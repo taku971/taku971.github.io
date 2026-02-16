@@ -3,8 +3,22 @@
  * ------------------------------------
  * Theme: Minimalist Modern
  * Description: A clean, modern interface focusing on typography, whitespace, and subtle shadows.
+ *
+ * Table of Contents:
+ * 1. Variables (:root)
+ * 2. Reset & Base Styles
+ * 3. Typography
+ * 4. Layout & Containers
+ * 5. Components - Header
+ * 6. Components - App List
+ * 7. Components - Footer Navigation
+ * 8. Components - Footer
+ * 9. Components - CTA Buttons
+ * 10. Utilities & Helpers
+ * 11. Responsive Design
  */
 
+/* 1. Variables (:root) */
 :root {
     /* Colors */
     --color-primary: #007AFF;
@@ -44,23 +58,11 @@
     --container-width: 960px;
 }
 
-/* Reset & Base Styles */
+/* 2. Reset & Base Styles */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
 }
 
 body {
@@ -73,7 +75,7 @@ body {
     min-height: 100vh;
 }
 
-/* Typography */
+/* 3. Typography */
 h1, h2, h3, h4, h5, h6 {
     line-height: var(--line-height-heading);
     margin-bottom: var(--spacing-md);
@@ -106,7 +108,7 @@ a {
 
 a:hover { color: var(--color-primary-hover); }
 
-/* Layout Containers */
+/* 4. Layout & Containers */
 .container {
     max-width: var(--container-width);
     margin: 0 auto;
@@ -119,7 +121,7 @@ a:hover { color: var(--color-primary-hover); }
     padding-left: var(--spacing-xl);
 }
 
-/* Header */
+/* 5. Components - Header */
 header {
     text-align: center;
     margin-bottom: var(--spacing-xxl);
@@ -138,7 +140,7 @@ header {
     margin: 0 auto;
 }
 
-/* App List (Grid Layout) */
+/* 6. Components - App List */
 .app-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -212,7 +214,7 @@ header {
     line-height: 1.5;
 }
 
-/* Footer Navigation */
+/* 7. Components - Footer Navigation */
 .footer-nav {
     display: flex;
     justify-content: center;
@@ -240,7 +242,7 @@ header {
     text-decoration: none;
 }
 
-/* Footer */
+/* 8. Components - Footer */
 .footer {
     text-align: center;
     font-size: 0.75rem;
@@ -260,7 +262,7 @@ header {
     opacity: 1;
 }
 
-/* CTA Buttons (for sub-pages) */
+/* 9. Components - CTA Buttons */
 .cta-row {
     display: flex;
     flex-wrap: wrap;
@@ -300,7 +302,20 @@ header {
     border-color: #d1d5db;
 }
 
-/* Responsive Design */
+/* 10. Utilities & Helpers */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* 11. Responsive Design */
 @media (max-width: 600px) {
     :root {
         --spacing-lg: 16px;
