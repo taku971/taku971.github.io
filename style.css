@@ -370,3 +370,35 @@ a:hover { color: var(--color-primary-hover); }
         width: 100%;
     }
 }
+
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--spacing-sm); /* 8px */
+    margin-bottom: var(--spacing-lg); /* 24px */
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.lang-link {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.lang-link:hover {
+    color: var(--color-primary);
+}
+
+.lang-link.active {
+    color: var(--color-primary);
+    font-weight: 700;
+    pointer-events: none;
+    cursor: default;
+}
+
+.lang-separator {
+    color: var(--color-border);
+}
