@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
+    <header class="sticky-header">
+        <div class="header-inner">
             <a href="index.html" class="header-logo-link">
-                <img src="pairmoni_logo_full.png" alt="ペアモニ" class="header-logo">
+                <img src="pairmoni_logo_full.png" alt="ペアモニ" class="header-icon">
             </a>
-            <h1 class="visually-hidden">ペアモニ</h1>
-            <p class="intro-text">便利で楽しいアプリを開発しています。</p>
-        </header>
+            <nav class="header-nav">
+                <a href="#apps" class="nav-link">アプリ一覧</a>
+                <a href="contact.html" class="nav-link">問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="visually-hidden">ペアモニ</h1>
+        <p class="intro-text">便利で楽しいアプリを開発しています。</p>
 
         <main id="apps">
             <ul class="app-list">
@@ -65,11 +71,6 @@
         </main>
 
         <footer class="footer-section">
-            <nav class="footer-nav">
-                <a href="index.html" class="nav-button">ホーム</a>
-                <a href="contact.html" class="nav-button">お問い合わせ</a>
-            </nav>
-
             <div class="footer">
                 <p>&copy; 2026 pairmoni</p>
             </div>

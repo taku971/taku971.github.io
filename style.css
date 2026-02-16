@@ -122,13 +122,34 @@ a:hover { color: var(--color-primary-hover); }
 }
 
 /* 5. Components - Header */
-header {
-    text-align: center;
-    margin-bottom: var(--spacing-xxl);
+.sticky-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-border);
+    width: 100%;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.sticky-header .header-inner {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
 }
 
 .header-logo-link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
     transition: opacity 0.2s ease;
 }
 
@@ -136,19 +157,39 @@ header {
     opacity: 0.8;
 }
 
-.header-logo {
-    display: block;
-    width: 100%;
-    max-width: 180px;
-    height: auto;
-    margin: 0 auto var(--spacing-lg) auto;
+.header-icon {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+}
+
+.header-nav {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-main);
+    text-decoration: none;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .intro-text {
     font-size: 1.125rem;
     color: var(--color-text-secondary);
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto var(--spacing-xl);
+    text-align: center;
 }
 
 /* 6. Components - App List */
@@ -225,33 +266,7 @@ header {
     line-height: 1.5;
 }
 
-/* 7. Components - Footer Navigation */
-.footer-nav {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-xl);
-    padding-top: var(--spacing-lg);
-    border-top: 1px solid var(--color-border);
-}
-
-.nav-button {
-    padding: var(--spacing-sm) var(--spacing-lg);
-    background-color: var(--color-surface);
-    color: var(--color-text-main);
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius-md);
-    font-weight: 500;
-    font-size: 0.875rem;
-    transition: all 0.2s ease;
-}
-
-.nav-button:hover {
-    background-color: var(--color-primary);
-    color: #fff;
-    border-color: var(--color-primary);
-    text-decoration: none;
-}
+/* 7. Components - Footer Navigation (Removed) */
 
 /* 8. Components - Footer */
 .footer {
@@ -333,14 +348,18 @@ header {
         grid-template-columns: 1fr; /* Stack vertically on mobile */
     }
 
-    .footer-nav {
-        flex-direction: column;
-        align-items: stretch;
+    .sticky-header .header-inner {
+        padding: 0 var(--spacing-md);
+        height: 50px;
     }
-    
-    .nav-button {
-        text-align: center;
-        width: 100%;
+
+    .header-icon {
+        height: 24px;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+        padding: 4px 8px;
     }
     
     .cta-row {
@@ -349,9 +368,5 @@ header {
     
     .cta-button {
         width: 100%;
-    }
-
-    .header-logo {
-        max-width: 120px;
     }
 }
