@@ -571,7 +571,7 @@ a:hover { color: var(--color-primary-hover); }
         width: 100%;
     }
 
-    .app-store-badge-link {
+    .cta-row .app-store-badge-link {
         align-self: center; /* Badge stays centered even if buttons stretch */
         margin-top: 0;
         margin-bottom: var(--spacing-md);
