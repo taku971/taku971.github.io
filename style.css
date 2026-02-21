@@ -144,7 +144,7 @@ a:hover { color: var(--color-primary-hover); }
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 80px;
 }
 
 .header-logo-link {
@@ -160,7 +160,7 @@ a:hover { color: var(--color-primary-hover); }
 }
 
 .header-icon {
-    height: 32px;
+    height: 48px;
     width: auto;
     object-fit: contain;
 }
@@ -503,11 +503,11 @@ a:hover { color: var(--color-primary-hover); }
 
     .sticky-header .header-inner {
         padding: 0 var(--spacing-md);
-        height: 50px;
+        height: 60px;
     }
 
     .header-icon {
-        height: 24px;
+        height: 36px;
     }
 
     .nav-link {
