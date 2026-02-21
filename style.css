@@ -21,8 +21,10 @@
 /* 1. Variables (:root) */
 :root {
     /* Colors */
-    --color-primary: #007AFF;
-    --color-primary-hover: #0056b3;
+    --color-primary: #319BBA;
+    --color-primary-hover: #2A85A0;
+    --color-accent: #EB7C31;
+    --color-accent-hover: #D46F2B;
     --color-background: #F5F7FA;
     --color-surface: #FFFFFF;
     --color-text-main: #1F2937;
@@ -93,7 +95,7 @@ h2 {
     font-weight: 600; 
     margin-top: var(--spacing-xl);
     padding-bottom: var(--spacing-xs);
-    border-bottom: 2px solid var(--color-border);
+    border-bottom: 2px solid var(--color-primary);
 }
 
 h3 { font-size: 1.25rem; font-weight: 600; }
@@ -289,7 +291,7 @@ a:hover { color: var(--color-primary-hover); }
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-primary);
+    background-color: var(--color-accent);
     color: #fff;
     padding: 10px 24px;
     border-radius: 9999px; /* Pill shape */
@@ -301,7 +303,7 @@ a:hover { color: var(--color-primary-hover); }
 }
 
 .cta-button:hover {
-    background-color: var(--color-primary-hover);
+    background-color: var(--color-accent-hover);
     text-decoration: none;
     transform: translateY(-1px);
 }
