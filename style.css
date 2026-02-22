@@ -744,3 +744,40 @@ a:hover { color: var(--color-primary-hover); }
     margin-bottom: var(--spacing-xs);
     color: var(--color-primary);
 }
+
+.developer-social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+
+.social-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Invert colors for white logos on light background (e.g. X logo) */
+.icon-x {
+    filter: invert(1);
+}
+
+/* Adjust note icon size for visual balance */
+.icon-note {
+    transform: scale(1.2);
+}
